@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		BF26DB83214373A800D2FE22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF26DB82214373A800D2FE22 /* AppDelegate.swift */; };
-		BF26DB85214373A800D2FE22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF26DB84214373A800D2FE22 /* ViewController.swift */; };
 		BF26DB88214373A800D2FE22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF26DB86214373A800D2FE22 /* Main.storyboard */; };
 		BF26DB8A214373A900D2FE22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF26DB89214373A900D2FE22 /* Assets.xcassets */; };
 		BF26DB8D214373AA00D2FE22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF26DB8B214373A900D2FE22 /* LaunchScreen.storyboard */; };
 		BF26DB98214373AA00D2FE22 /* SimpleAlarmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF26DB97214373AA00D2FE22 /* SimpleAlarmTests.swift */; };
 		BF26DBA3214373AA00D2FE22 /* SimpleAlarmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF26DBA2214373AA00D2FE22 /* SimpleAlarmUITests.swift */; };
+		BF26DBB12143778900D2FE22 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF26DBB02143778900D2FE22 /* Alarm.swift */; };
+		BF26DBB321437D0600D2FE22 /* AlarmTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF26DBB221437D0600D2FE22 /* AlarmTableViewController.swift */; };
+		BF26DBB521438DAD00D2FE22 /* AddAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF26DBB421438DAD00D2FE22 /* AddAlarmViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		BF26DB7F214373A800D2FE22 /* SimpleAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF26DB82214373A800D2FE22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BF26DB84214373A800D2FE22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BF26DB87214373A800D2FE22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF26DB89214373A900D2FE22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF26DB8C214373AA00D2FE22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		BF26DB9E214373AA00D2FE22 /* SimpleAlarmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleAlarmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF26DBA2214373AA00D2FE22 /* SimpleAlarmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAlarmUITests.swift; sourceTree = "<group>"; };
 		BF26DBA4214373AA00D2FE22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF26DBB02143778900D2FE22 /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		BF26DBB221437D0600D2FE22 /* AlarmTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmTableViewController.swift; sourceTree = "<group>"; };
+		BF26DBB421438DAD00D2FE22 /* AddAlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAlarmViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				BF26DB82214373A800D2FE22 /* AppDelegate.swift */,
-				BF26DB84214373A800D2FE22 /* ViewController.swift */,
 				BF26DB86214373A800D2FE22 /* Main.storyboard */,
 				BF26DB89214373A900D2FE22 /* Assets.xcassets */,
 				BF26DB8B214373A900D2FE22 /* LaunchScreen.storyboard */,
 				BF26DB8E214373AA00D2FE22 /* Info.plist */,
+				BF26DBB02143778900D2FE22 /* Alarm.swift */,
+				BF26DBB221437D0600D2FE22 /* AlarmTableViewController.swift */,
+				BF26DBB421438DAD00D2FE22 /* AddAlarmViewController.swift */,
 			);
 			path = SimpleAlarm;
 			sourceTree = "<group>";
@@ -256,8 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF26DB85214373A800D2FE22 /* ViewController.swift in Sources */,
+				BF26DBB521438DAD00D2FE22 /* AddAlarmViewController.swift in Sources */,
 				BF26DB83214373A800D2FE22 /* AppDelegate.swift in Sources */,
+				BF26DBB321437D0600D2FE22 /* AlarmTableViewController.swift in Sources */,
+				BF26DBB12143778900D2FE22 /* Alarm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
